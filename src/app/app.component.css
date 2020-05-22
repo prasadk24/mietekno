@@ -1,0 +1,41 @@
+h3{color:#000}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0px !important;
+    border-radius: 0;
+  }
+  
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
+  .banner{
+      height:120px;
+      background-color:#22a14c;
+      background:url('../assets/images/banner.jpg') no-repeat;
+  }
+footer{
+  font-size: 12px;
+}
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; 
+  }
+}
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+  height: 100%;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+main {
+  padding: 10px;
+}
+
+.panel-heading{position:relative;}
+.pull-left{float:left;position:relative;}
