@@ -13,7 +13,7 @@ import { InstrumentsComponent } from './instruments/instruments.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { SidenavListComponent } from './nav/sidenav-list/sidenav-list.component';
 const routes: Routes = [
-  { path: '', component: AboutComponent },
+  { path: '', redirectTo: "about", pathMatch: "full" },
   { path: 'about', component: AboutComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactComponent },
