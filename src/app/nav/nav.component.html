@@ -12,19 +12,20 @@
     </div>
   </nav>
 //-->
-  <mat-toolbar color="primary">
-    <div fxHide.gt-xs  >
+<mat-toolbar color="primary">
+    <div fxHide.gt-xs>
         <button mat-icon-button (click)="onToggleSidenav()" fxShow="true" fxHide.gt-sm>
             <mat-icon>menu</mat-icon>
         </button>
     </div>
     <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs fxShow="true" fxHide.lt-md>
         <ul fxLayout fxLayoutGap="15px" class="navigation-items">
-          <li class="active"><a routerLink="/">Home</a></li>
-          <li><a routerLink="/products">Projects</a></li>
-          <li><a routerLink="/instruments">Process Instruments</a></li>
-          <li><a routerLink="/gallery">Gallery</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
+            <li class="active"><a routerLink="/">Home</a></li>
+            <li><a routerLink="/products">Projects</a></li>
+            <li><a routerLink="/instruments">Process Instruments</a></li>
+            <li><a routerLink="/dealers">Dealers</a></li>
+            <li><a routerLink="/gallery">Gallery</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
         </ul>
     </div>
-  </mat-toolbar>
+</mat-toolbar>

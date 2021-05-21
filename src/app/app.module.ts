@@ -12,11 +12,13 @@ import { ContactComponent } from './contact/contact.component';
 import { InstrumentsComponent } from './instruments/instruments.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { SidenavListComponent } from './nav/sidenav-list/sidenav-list.component';
+import { DealersComponent } from './dealers/dealers.component';
 const routes: Routes = [
   { path: '', redirectTo: "about", pathMatch: "full" },
   { path: 'about', component: AboutComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'dealers', component: DealersComponent },
   { path: 'instruments', component: InstrumentsComponent },
   { path: 'gallery', component: GalleryComponent },
 ];
@@ -30,6 +32,7 @@ const routes: Routes = [
     InstrumentsComponent,
     GalleryComponent,
     SidenavListComponent,
+    DealersComponent,
     
   ],
   imports: [
