@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
-import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { MatTabsModule, MatExpansionModule, MatCardModule, MatGridListModule, MatDividerModule, MatMenuModule, MatIconModule, MatToolbarModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSidenavModule, MatListModule  } from '@angular/material';
@@ -48,7 +47,7 @@ const routes: Routes = [
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {onSameUrlNavigation: 'ignore'})
   ],
   exports: [RouterModule, MatTabsModule,  MatSidenavModule, MatToolbarModule, MatButtonModule,
     MatIconModule, MatListModule ],
